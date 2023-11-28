@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b892356-001c-4740-9fad-e94b087b5629" name="Changes" comment="docentRepositoty updated">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f85e955-a424-4464-84ba-2be40c963a86.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f85e955-a424-4464-84ba-2be40c963a86.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configuration/JPAConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/JPAConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +98,7 @@
       <workItem from="1700313412991" duration="142000" />
       <workItem from="1700313567513" duration="5765000" />
       <workItem from="1700869651357" duration="31000" />
-      <workItem from="1700869972251" duration="7345000" />
+      <workItem from="1700869972251" duration="20414000" />
     </task>
     <task id="LOCAL-00001" summary="docentRepositoty updated">
       <created>1700910451754</created>
@@ -98,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700910451755</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="docentRepositoty updated">
+      <created>1700911045111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700911045111</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

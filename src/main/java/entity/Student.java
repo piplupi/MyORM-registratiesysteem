@@ -2,11 +2,6 @@ package entity;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
 @Entity
 public class Student {
 
@@ -22,6 +17,9 @@ public class Student {
 
     @Column(nullable = false, unique = true)
     private String studentID;
+
+    @OneToOne
+    private StudentDetail studentDetail;
 
 // Getters and setters
 
@@ -52,6 +50,10 @@ public class Student {
     public String getStudentID() { return studentID;}
 
     public void setStudentID(String studentID) { this.studentID = studentID;}
+
+    public StudentDetail getStudentDetail() { return studentDetail;}
+
+    public void setStudentDetail(StudentDetail studentDetail) {this.studentDetail = studentDetail;}
 
     @Override
     public String toString() {

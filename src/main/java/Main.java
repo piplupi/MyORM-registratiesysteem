@@ -43,5 +43,75 @@ public class Main {
 //                    docent.getachternaam() + " In dienst datum = " + docent.getDatumIndienst() +
 //                    " onderdeel = " + docent.getOnderdeel());
 //        });
+//
+        StudentService studentService = new StudentService();
+        StudentDetailService studentDetailService = new StudentDetailService();
+//
+//        Student student1 = new Student();
+//        student1.setVoornaam("Megumi");
+//        student1.setAchternaam("Fushiguro");
+//        student1.setStudentID("ET23");
+//
+//        StudentDetail detailSt1 = new StudentDetail();
+//        detailSt1.setEnrolledDate("07-10-2019");
+//        detailSt1.setAdress("eenstraat #3");
+//        detailSt1.setTelefoonnummer("12345");
+//        detailSt1.setGeboorteDatum("16-07-2009");
+//
+//        studentDetailService.createStudentDetail(detailSt1);
+//        student1.setStudentDetail(detailSt1);
+//        studentService.insertStudent(student1);
+//        //--------------------------------------------------
+//        Student student2 = new Student();
+//        student2.setVoornaam("Itadori");
+//        student2.setAchternaam("Yuji");
+//        student2.setStudentID("BT24");
+//
+//        StudentDetail detailSt2 = new StudentDetail();
+//        detailSt2.setEnrolledDate("07-10-2019");
+//        detailSt2.setAdress("Zwaanstraat #3");
+//        detailSt2.setTelefoonnummer("678910");
+//        detailSt2.setGeboorteDatum("16-07-2002");
+//
+//        studentDetailService.createStudentDetail(detailSt2);
+//        student2.setStudentDetail(detailSt2);
+//        studentService.insertStudent(student2);
+//        //--------------------------------------------------
+//        Student student3 = new Student();
+//        student3.setVoornaam("Nobara");
+//        student3.setAchternaam("kugisaki");
+//        student3.setStudentID("UY67");
+//
+//        StudentDetail detailSt3 = new StudentDetail();
+//        detailSt3.setEnrolledDate("07-10-2019");
+//        detailSt3.setAdress("Flustraat #3");
+//        detailSt3.setTelefoonnummer("895683");
+//        detailSt3.setGeboorteDatum("16-07-2001");
+//
+//        studentDetailService.createStudentDetail(detailSt3);
+//        student3.setStudentDetail(detailSt3);
+//        studentService.insertStudent(student3);
+//        //--------------------------------------------------
+//
+//        List<Student> studenten = studentService.getAllStudents();
+//        studenten.forEach(student -> {
+//            System.out.println(" ID = " + student.getId() + " Voornaam = " +
+//                    student.getVoornaam() + " Achternaam = " + student.getAchternaam() +
+//                    " Student ID = " + student.getStudentID());
+//        });
+//
+//        List<StudentDetail> studentDetailsList = studentDetailService.getAllStudentDetails();
+//        studentDetailsList.forEach(studentDetails -> {
+//            System.out.println(" ID = " + studentDetails.getId() + " EnrolledDate = " +
+//                    studentDetails.getEnrolledDate() + " Adress = " + studentDetails.getAdress() +
+//                    " Telefoonnummer = " + studentDetails.getTelefoonnummer() +
+//                   " Geboorte Datum = " + studentDetails.getGeboorteDatum());
+//        });
+
+
+
+
+
+
     }
 }
