@@ -21,8 +21,7 @@ public class Student {
     @OneToOne
     private StudentDetail studentDetail;
 
-    @OneToOne
-    private Onderdeel onderdeel;
+
 
 // Getters and setters
 

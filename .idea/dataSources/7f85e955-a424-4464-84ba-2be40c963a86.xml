@@ -1045,23 +1045,23 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="301" parent="291" name="opleiding">
+    <table id="301" parent="291" name="student">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="302" parent="291" name="student">
+    <table id="302" parent="291" name="student_seq">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="303" parent="291" name="student_seq">
+    <table id="303" parent="291" name="studentdetail">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="304" parent="291" name="studentdetail">
+    <table id="304" parent="291" name="studentdetail_seq">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="305" parent="291" name="studentdetail_seq">
+    <table id="305" parent="291" name="trainingzaal">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
@@ -1070,173 +1070,203 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="307" parent="298" name="achternaam">
+    <column id="307" parent="298" name="voornaam">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="308" parent="298" name="datumIndienst">
+    <column id="308" parent="298" name="achternaam">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="309" parent="298" name="onderdeel">
-      <DasType>varchar(255)|0s</DasType>
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="310" parent="298" name="voornaam">
+    <column id="310" parent="298" name="datumIndienst">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="311" parent="298" name="PRIMARY">
+    <foreign-key id="311" parent="298" name="onderdeelfk">
+      <ColNames>onderdeel</ColNames>
+      <RefColNames>idonderdeel</RefColNames>
+      <RefTableName>onderdeel</RefTableName>
+    </foreign-key>
+    <index id="312" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="312" parent="298" name="PRIMARY">
+    <index id="313" parent="298" name="onderdeelfk_idx">
+      <ColNames>onderdeel</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="314" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="313" parent="299" name="next_val">
+    <column id="315" parent="299" name="next_val">
       <DasType>bigint|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="314" parent="300" name="idonderdeel">
+    <column id="316" parent="300" name="idonderdeel">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="315" parent="300" name="onderdeelnaam">
+    <column id="317" parent="300" name="onderdeelnaam">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="316" parent="300" name="PRIMARY">
+    <index id="318" parent="300" name="PRIMARY">
       <ColNames>idonderdeel</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="317" parent="300" name="PRIMARY">
+    <key id="319" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="318" parent="301" name="idopleiding">
+    <column id="320" parent="301" name="id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="319" parent="301" name="opleidingnaam">
-      <DasType>varchar(45)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <index id="320" parent="301" name="PRIMARY">
-      <ColNames>idopleiding</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="321" parent="301" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="322" parent="302" name="id">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="323" parent="302" name="achternaam">
+    <column id="321" parent="301" name="voornaam">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="324" parent="302" name="studentID">
+    <column id="322" parent="301" name="achternaam">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="325" parent="302" name="voornaam">
+    <column id="323" parent="301" name="studentID">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="326" parent="302" name="studentDetail_id">
+    <column id="324" parent="301" name="studentDetail_id">
       <DasType>int|0s</DasType>
       <Position>5</Position>
     </column>
-    <foreign-key id="327" parent="302" name="FKrab507rpfomqftdr10vpammqg">
+    <column id="325" parent="301" name="onderdeelid">
+      <DasType>int|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="326" parent="301" name="FKrab507rpfomqftdr10vpammqg">
       <ColNames>studentDetail_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>studentdetail</RefTableName>
     </foreign-key>
-    <index id="328" parent="302" name="PRIMARY">
+    <foreign-key id="327" parent="301" name="onderdeelstudentfk">
+      <ColNames>onderdeelid</ColNames>
+      <RefColNames>idonderdeel</RefColNames>
+      <RefTableName>onderdeel</RefTableName>
+    </foreign-key>
+    <index id="328" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="329" parent="302" name="UK_98ybks9de4t34i07mf3pjns2">
+    <index id="329" parent="301" name="UK_98ybks9de4t34i07mf3pjns2">
       <ColNames>studentID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="330" parent="302" name="FKrab507rpfomqftdr10vpammqg">
+    <index id="330" parent="301" name="FKrab507rpfomqftdr10vpammqg">
       <ColNames>studentDetail_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="331" parent="302" name="PRIMARY">
+    <index id="331" parent="301" name="onderdeelfk_idx">
+      <ColNames>onderdeelid</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="332" parent="301" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="332" parent="302" name="UK_98ybks9de4t34i07mf3pjns2">
+    <key id="333" parent="301" name="UK_98ybks9de4t34i07mf3pjns2">
       <UnderlyingIndexName>UK_98ybks9de4t34i07mf3pjns2</UnderlyingIndexName>
     </key>
-    <column id="333" parent="303" name="next_val">
+    <column id="334" parent="302" name="next_val">
       <DasType>bigint|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="334" parent="304" name="id">
+    <column id="335" parent="303" name="id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="335" parent="304" name="adress">
+    <column id="336" parent="303" name="adress">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="336" parent="304" name="enrolledDate">
+    <column id="337" parent="303" name="enrolledDate">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="337" parent="304" name="geboorteDatum">
+    <column id="338" parent="303" name="geboorteDatum">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="338" parent="304" name="telefoonnummer">
+    <column id="339" parent="303" name="telefoonnummer">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="339" parent="304" name="PRIMARY">
+    <index id="340" parent="303" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="340" parent="304" name="PRIMARY">
+    <key id="341" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="341" parent="305" name="next_val">
+    <column id="342" parent="304" name="next_val">
       <DasType>bigint|0s</DasType>
       <Position>1</Position>
     </column>
+    <column id="343" parent="305" name="idtrainingzaal">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="344" parent="305" name="onderdeelid">
+      <DasType>int|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="345" parent="305" name="onderdeelidfk ">
+      <ColNames>onderdeelid</ColNames>
+      <RefColNames>idonderdeel</RefColNames>
+      <RefTableName>onderdeel</RefTableName>
+    </foreign-key>
+    <index id="346" parent="305" name="PRIMARY">
+      <ColNames>idtrainingzaal</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="347" parent="305" name="onderdeelidfk _idx">
+      <ColNames>onderdeelid</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="348" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>
