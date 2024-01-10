@@ -7,27 +7,29 @@ public class Student {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int student_id;
 
-    @Column(nullable = false)
+    @Column
     private String voornaam;
 
-    @Column(nullable = false)
+    @Column
     private String achternaam;
-
-    @Column(nullable = false, unique = true)
-    private String studentID;
 
     @OneToOne
     private StudentDetail studentDetail;
 
-
+    @OneToOne
+    private Onderdeel onderdeelInfo;
 
 // Getters and setters
 
-    public int getId() {return id;}
+    public int getStudent_id() {
+        return student_id;
+    }
 
-    public void setId(int id) {this.id = id;}
+    public void setStudent_id(int id) {
+        this.student_id = id;
+    }
 
     public String getVoornaam() {
         return voornaam;
@@ -45,22 +47,40 @@ public class Student {
         this.achternaam = achternaam;
     }
 
-    public String getStudentID() { return studentID;}
+    public StudentDetail getStudentDetail() {
+        return studentDetail;
+    }
 
-    public void setStudentID(String studentID) { this.studentID = studentID;}
+    public void setStudentDetail(StudentDetail studentDetail) {
+        this.studentDetail = studentDetail;
+    }
 
-    public StudentDetail getStudentDetail() { return studentDetail;}
+    public Onderdeel getOnderdeelInfo() {
+        return onderdeelInfo;
+    }
 
-    public void setStudentDetail(StudentDetail studentDetail) {this.studentDetail = studentDetail;}
+    public void setOnderdeelInfo(Onderdeel onderdeelInfo) {
+        this.onderdeelInfo = onderdeelInfo;
+    }
+
+
+    public void setStudentDetail(String s) {
+    }
+
+    public void setOnderdeelInfo(String s) {
+    }
 
     @Override
     public String toString() {
         return "Student{" +
-                "id=" + id +
-                ", voornaam='" + voornaam + '\'' +
-                ", achternaam='" + achternaam + '\'' +
-                ", studentID='" + studentID + '\'' +
+                "ID=" + student_id +
+                ", Voornaam='" + voornaam + '\'' +
+                ", Achternaam='" + achternaam + '\'' +
+                ", StudentDetails='" + studentDetail + '\'' +
+                ", Onderdeel='" + onderdeelInfo + '\'' +
                 '}';
     }
+
+
 
 }

@@ -1,12 +1,16 @@
 package repository;
 
+import entity.Docent;
 import entity.Student;
 import entity.StudentDetail;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
+
 import java.util.List;
+
 import static configuration.JPAConfiguration.entityManager;
+
 public class StudentDetailRepository {
 
     private EntityManager entityManager;
@@ -37,6 +41,19 @@ public class StudentDetailRepository {
         return studentDetailList;
     }
 
+    // DELETE Docent
+    public void deletestudentDetail(StudentDetail studentDetail) {
+        try {
+            entityManager.getTransaction().begin();
+            System.out.println("Student record: " + studentDetail.getDetails_id() + " " + "has been deleted.");
+            entityManager.remove(studentDetail);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+            entityManager.getTransaction().rollback();
+        }
 
+
+    }
 
 }

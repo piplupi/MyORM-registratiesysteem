@@ -53,7 +53,7 @@ public class StudentRepository {
         return rowsDeleted;
     }
 
-    // DELETE Student + referenced object
+    // DELETE Student
     public void deleteStudent(Student student) {
         try {
             entityManager.getTransaction().begin();

@@ -7,52 +7,57 @@ public class Docent {
 
     @Id
     @GeneratedValue
-    private int id;
+    private int docent_id;
 
-    @Column(nullable = false)
-    private String voornaam;
+    @Column
+    private String dvoornaam;
 
-    @Column(nullable = false)
-    private String achternaam;
+    @Column
+    private String dachternaam;
 
-    @Column(nullable = false)
+
+    @Column
+    private String docentEmail;
+
+    @Column
+    private String datumIndienst;
+
+    @Column
     private String onderdeel;
 
-    @Column(nullable = false)
-    private String datumIndienst;
 
 // Getters and setters
 
-    public int getId() {
-        return id;
+    public int getDocent_id() {
+        return docent_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setDocent_id(int id) {
+        this.docent_id = id;
     }
 
     public String getvoornaam() {
-        return voornaam;
+        return dvoornaam;
     }
 
     public void setvoornaam(String voornaam) {
-        this.voornaam = voornaam;
+        this.dvoornaam = voornaam;
     }
 
     public String getachternaam() {
-        return achternaam;
+        return dachternaam;
     }
 
     public void setachternaam(String achternaam) {
-        this.achternaam = achternaam;
+        this.dachternaam = achternaam;
     }
 
-    public String getOnderdeel() {
-        return onderdeel;
+    public String getDocentEmail() {
+        return docentEmail;
     }
 
-    public void setOnderdeel(String onderdeel) {
-        this.onderdeel = onderdeel;
+    public void setDocentEmail(String docentEmail) {
+        this.docentEmail = docentEmail;
     }
 
     public String getDatumIndienst() {
@@ -63,15 +68,29 @@ public class Docent {
         this.datumIndienst = datumIndienst;
     }
 
+    public String getOnderdeel() {
+        return onderdeel;
+    }
+
+    public void setOnderdeel(String onderdeel) {
+        this.onderdeel = onderdeel;
+    }
+
+
+
+
     @Override
     public String toString() {
         return "Docent{" +
-                "id=" + id +
-                ", voornaam='" + voornaam + '\'' +
-                ", achternaam='" + achternaam + '\'' +
-                ", onderdeel='" + onderdeel + '\'' +
-                ", in dienst datum='" + datumIndienst + '\'' +
+                "ID=" + docent_id +
+                ", Voornaam='" + dvoornaam + '\'' +
+                ", Achternaam='" + dachternaam + '\'' +
+                ", In dienst datum='" + datumIndienst + '\'' +
+                ", Email='" + docentEmail + '\'' +
+                ", Onderdeel='" + onderdeel + '\'' +
                 '}';
     }
+
+
 }
 

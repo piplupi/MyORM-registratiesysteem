@@ -18,10 +18,4 @@ public class DocentService {
         return repository.createDocent(docent);
     }
 
-    public List<Docent> getAllDocenten() {
-        return repository.getDocenten();
-    }
-
-
-
 }
