@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b892356-001c-4740-9fad-e94b087b5629" name="Changes" comment="updates">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f85e955-a424-4464-84ba-2be40c963a86.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f85e955-a424-4464-84ba-2be40c963a86.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/configuration/JPAConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configuration/JPAConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Docent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Docent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Onderdeel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Onderdeel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Onderdeel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/Onderdeel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/StudentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/StudentDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/TrainingZaal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/DocentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/DocentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDetailRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TrainingZaalRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/DocentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/DocentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/TrainingZaalService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/OnderdeelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/NewOnderdeelBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/OnderdeelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/OnderdeelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/skasa/IdeaProjects/MyORM-registratiesysteem",
+    "last_opened_file_path": "C:/Workspace/MyOrm-hibernate-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,6 +103,7 @@
       <workItem from="1702027515061" duration="3195000" />
       <workItem from="1704668145699" duration="1189000" />
       <workItem from="1704841197278" duration="12231000" />
+      <workItem from="1704920795680" duration="7823000" />
     </task>
     <task id="LOCAL-00001" summary="docentRepositoty updated">
       <created>1700910451754</created>

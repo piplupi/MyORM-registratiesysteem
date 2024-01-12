@@ -1,9 +1,9 @@
 package service;
+
 import configuration.JPAConfiguration;
-import entity.Docent;
 import entity.Student;
-import repository.DocentRepository;
 import repository.StudentRepository;
+
 import java.util.List;
 
 public class StudentService {
@@ -21,7 +21,5 @@ public class StudentService {
     public List<Student> getAllStudents() {
         return repository.getStudenten();
     }
-
-
 
 }

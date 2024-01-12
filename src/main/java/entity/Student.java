@@ -1,5 +1,6 @@
 package entity;
 
+import designPatterns.builder.Onderdeel;
 import jakarta.persistence.*;
 
 @Entity
