@@ -1,15 +1,11 @@
 package repository;
 
-import entity.Docent;
-import entity.Student;
 import entity.StudentDetail;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 
 import java.util.List;
-
-import static configuration.JPAConfiguration.entityManager;
 
 public class StudentDetailRepository {
 
@@ -54,6 +50,32 @@ public class StudentDetailRepository {
         }
 
 
+    }
+
+    public int updateStudentDetailAdres(String adres, int studentId){
+        int rowsUpdated;
+        entityManager.getTransaction().begin();
+        Query query = entityManager.createQuery("UPDATE StudentDetail sd SET sd.adress = :adres " +
+                "where sd.id = :id ");
+        query.setParameter("adres", adres);
+        query.setParameter("id", studentId);
+        rowsUpdated = query.executeUpdate();
+        entityManager.getTransaction().commit();
+
+        return rowsUpdated;
+    }
+
+    public int updateStudentDetailTelno(String tel, int studentId){
+        int rowsUpdated;
+        entityManager.getTransaction().begin();
+        Query query = entityManager.createQuery("UPDATE StudentDetail sd SET sd.telefoonnummer = :telno " +
+                "where sd.id = :id ");
+        query.setParameter("telno", tel);
+        query.setParameter("id", studentId);
+        rowsUpdated = query.executeUpdate();
+        entityManager.getTransaction().commit();
+
+        return rowsUpdated;
     }
 
 }

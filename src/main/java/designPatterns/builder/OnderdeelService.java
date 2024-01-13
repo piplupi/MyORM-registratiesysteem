@@ -25,7 +25,10 @@ public class OnderdeelService {
     public Onderdeel createOnderdeel(Onderdeel onderdeel) {return newOnderdeelBuilder.createOnderdeel(onderdeel);
     }
 
-    public void deleteOnderdeel(Onderdeel onderdeeId) {
+    public Onderdeel getOnderdeelByName(String onderwerp){ return repository.getOnderdeelByName(onderwerp);}
+
+
+    public void deleteOnderdeel(String onderdeeId) {
         if (onderdeeId != null) {
             newOnderdeelBuilder.deleteOnderdeel(onderdeeId);
         }

@@ -1,6 +1,7 @@
 package designPatterns.builder;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 
 import java.util.List;
@@ -48,11 +49,19 @@ public class NewOnderdeelBuilder {
         return addOnderdeel;
     }
 
+    public Onderdeel getOnderdeelByName(String onderdeelNaam) {
+        Query query = entityManager.createQuery("select o from Onderdeel o where o.onderdeel_id = :naam ");
+        query.setParameter("naam", onderdeelNaam);
+        Onderdeel result = (Onderdeel) query.getSingleResult();
+
+        return result;
+    }
+
 
     // DELETE
-    public void deleteOnderdeel(Onderdeel onderdeelId) {
+    public void deleteOnderdeel(String onderdeelId) {
         startTransaction();
-        Onderdeel subject = entityManager.find(Onderdeel.class, onderdeelId.getOnderdeel());
+        Onderdeel subject = entityManager.find(Onderdeel.class, Onderdeel.getOnderdeel());
         entityManager.remove(subject);
         entityManager.getTransaction().commit();
     }

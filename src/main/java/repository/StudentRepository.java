@@ -1,15 +1,12 @@
 package repository;
 
-import entity.Docent;
+import designPatterns.builder.Onderdeel;
 import entity.Student;
-import entity.StudentDetail;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import jakarta.persistence.TypedQuery;
 
 import java.util.List;
-
-import static configuration.JPAConfiguration.entityManager;
 
 public class StudentRepository {
 
@@ -30,6 +27,17 @@ public class StudentRepository {
         }
 
         return addStudent;
+    }
+
+    //GET STUDENT
+    public Student getStudentByName(String studentVoornaam, String studentAchternaam) {
+        Query query = entityManager.createQuery("select s from Student s where s.voornaam = :voornaam " +
+                "and s.achternaam = :achternaam");
+        query.setParameter("voornaam", studentVoornaam);
+        query.setParameter("achternaam", studentAchternaam);
+        Student result = (Student) query.getSingleResult();
+
+        return result;
     }
 
 
@@ -65,8 +73,31 @@ public class StudentRepository {
             e.printStackTrace();
             entityManager.getTransaction().rollback();
         }
+    }
+
+    public int deleteStudentByName(String studentVoornaam, String studentAchternaam){
+        int rowsDeleted;
+        entityManager.getTransaction().begin();
+        Query query = entityManager.createQuery("delete from Student s where s.voornaam = :voornaam " +
+                "and s.achternaam = :achternaam");
+        query.setParameter("voornaam", studentVoornaam);
+        query.setParameter("achternaam", studentAchternaam);
+        rowsDeleted = query.executeUpdate();
+        System.out.println("Records deleted: " + rowsDeleted);
+        entityManager.getTransaction().commit();
+        return rowsDeleted;
+
+    }
 
 
+    public List<Onderdeel> getStudentOnderdeel(String voornaam, String achternaam){
+        Query query = entityManager.createQuery("select s.onderdeelInfo from Student s where s.voornaam = :voornaam " +
+                "and s.achternaam = :achternaam");
+        query.setParameter("voornaam", voornaam);
+        query.setParameter("achternaam", achternaam);
+        List<Onderdeel> result = (List<Onderdeel>) query.getResultList();
+
+        return result;
     }
 
 }

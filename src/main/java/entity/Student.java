@@ -3,6 +3,9 @@ package entity;
 import designPatterns.builder.Onderdeel;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Student {
 
@@ -21,6 +24,13 @@ public class Student {
 
     @OneToOne
     private Onderdeel onderdeelInfo;
+
+    @ManyToMany
+    @JoinTable(name = "student_onderdeel",
+            joinColumns = { @JoinColumn(name = "fk_student") },
+            inverseJoinColumns = { @JoinColumn(name = "fk_onderdeel")} )
+    private List<Onderdeel> onderdelen = new ArrayList<>();
+
 
 // Getters and setters
 
@@ -71,6 +81,9 @@ public class Student {
     public void setOnderdeelInfo(String s) {
     }
 
+    public List<Onderdeel> getOnderdelen() {return onderdelen;}
+
+    public void setOnderdelen(List<Onderdeel> onderdelen) {this.onderdelen = onderdelen;}
     @Override
     public String toString() {
         return "Student{" +

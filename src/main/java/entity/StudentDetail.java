@@ -18,6 +18,8 @@ public class StudentDetail {
     private String studentEmail;
     @Column
     private String geboorteDatum;
+    @Column
+    private double kosten;
 
     // Getters and setters
     public int getDetails_id() {
@@ -67,6 +69,15 @@ public class StudentDetail {
     public void setGeboorteDatum(String geboorteDatum) {
         this.geboorteDatum = geboorteDatum;
     }
+
+    public double getKosten() {
+        return kosten;
+    }
+
+    public void setKosten(double kosten) {
+        this.kosten = kosten;
+    }
+
 
 
     @Override

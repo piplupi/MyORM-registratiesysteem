@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b892356-001c-4740-9fad-e94b087b5629" name="Changes" comment="updates">
+    <list default="true" id="1b892356-001c-4740-9fad-e94b087b5629" name="Changes" comment="BUILDER">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Onderdeel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/Onderdeel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designPatterns/builder/NewOnderdeelBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/NewOnderdeelBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designPatterns/builder/Onderdeel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/Onderdeel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/designPatterns/builder/OnderdeelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/OnderdeelService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/OnderdeelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/NewOnderdeelBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/OnderdeelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/builder/OnderdeelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/StudentDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/StudentDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentDetailService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +65,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -103,7 +110,7 @@
       <workItem from="1702027515061" duration="3195000" />
       <workItem from="1704668145699" duration="1189000" />
       <workItem from="1704841197278" duration="12231000" />
-      <workItem from="1704920795680" duration="7823000" />
+      <workItem from="1704920795680" duration="21008000" />
     </task>
     <task id="LOCAL-00001" summary="docentRepositoty updated">
       <created>1700910451754</created>
@@ -140,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702028031785</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="BUILDER">
+      <created>1705091674075</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705091674075</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +176,7 @@
     <MESSAGE value="chunky cat" />
     <MESSAGE value="chunky cat 2x" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="BUILDER" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUILDER" />
   </component>
 </project>

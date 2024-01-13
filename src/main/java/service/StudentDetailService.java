@@ -1,7 +1,6 @@
 package service;
 
 import configuration.JPAConfiguration;
-import entity.Docent;
 import entity.StudentDetail;
 import repository.StudentDetailRepository;
 
@@ -23,5 +22,8 @@ public class StudentDetailService {
         return studentDetailRepository.getstudentendetails();
     }
 
+    public int updateStudentdetailAdres(String adres, int id){return studentDetailRepository.updateStudentDetailAdres(adres, id);}
 
+    public int updateStudentdetailTel(String telno, int id){return studentDetailRepository.updateStudentDetailTelno(telno, id);}
 }
+

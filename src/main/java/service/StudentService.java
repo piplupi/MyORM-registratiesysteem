@@ -1,6 +1,7 @@
 package service;
 
 import configuration.JPAConfiguration;
+import designPatterns.builder.Onderdeel;
 import entity.Student;
 import repository.StudentRepository;
 
@@ -20,6 +21,17 @@ public class StudentService {
 
     public List<Student> getAllStudents() {
         return repository.getStudenten();
+    }
+
+    public Student getStudentByName(String studentVoornaam, String studentAchternaam){
+        return repository.getStudentByName(studentVoornaam, studentAchternaam);}
+
+    public List<Onderdeel> getOnderdeelVanStudent(String stVoornaam, String stAchternaam){
+        return this.repository.getStudentOnderdeel(stVoornaam, stAchternaam);
+    }
+
+    public int deleteStudent(String voornaam, String achternaam){
+        return repository.deleteStudentByName(voornaam, achternaam);
     }
 
 }

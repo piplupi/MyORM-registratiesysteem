@@ -13,7 +13,7 @@ public class Onderdeel {
     private int onderdeel_id;
 
     @Column
-    private String onderdeel;
+    private static String onderdeel;
 
     @Column
     private String onderdeel_prijs;
@@ -22,7 +22,7 @@ public class Onderdeel {
 // Getters and setters
     public int getId() {return onderdeel_id;}
     public void setId(int id) {this.onderdeel_id = id;}
-    public String getOnderdeel() {
+    public static String getOnderdeel() {
         return onderdeel;
     }
     public void setOnderdeel(String onderdeel) {
