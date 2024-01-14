@@ -1,7 +1,7 @@
 package service;
 
 import configuration.JPAConfiguration;
-import designPatterns.builder.Onderdeel;
+import designPatterns.Builder.Onderdeel;
 import entity.Student;
 import repository.StudentRepository;
 

@@ -1,6 +1,6 @@
 package entity;
 
-import designPatterns.builder.Onderdeel;
+import designPatterns.Builder.Onderdeel;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

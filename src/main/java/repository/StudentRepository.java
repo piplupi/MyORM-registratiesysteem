@@ -1,6 +1,6 @@
 package repository;
 
-import designPatterns.builder.Onderdeel;
+import designPatterns.Builder.Onderdeel;
 import entity.Student;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;

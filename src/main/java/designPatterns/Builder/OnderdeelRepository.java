@@ -1,4 +1,4 @@
-package designPatterns.builder;
+package designPatterns.Builder;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
@@ -6,14 +6,13 @@ import jakarta.persistence.TypedQuery;
 
 import java.util.List;
 
-public class NewOnderdeelBuilder {
+public class OnderdeelRepository {
 
     private EntityManager entityManager;
 
-    public NewOnderdeelBuilder(EntityManager entityManager) {
+    public OnderdeelRepository(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
-
 
     private void startTransaction() {
         if (entityManager.getTransaction() != null) {
@@ -37,34 +36,37 @@ public class NewOnderdeelBuilder {
     }
 
     // CREATE
-    public Onderdeel createOnderdeel(Onderdeel addOnderdeel) {
+    public Onderdeel insertOnderdeel(Onderdeel insertOnderdeel) {
         try {
             entityManager.getTransaction().begin();
-            entityManager.persist(addOnderdeel);
+            entityManager.persist(insertOnderdeel);
             entityManager.getTransaction().commit();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return addOnderdeel;
+        return insertOnderdeel;
     }
 
-    public Onderdeel getOnderdeelByName(String onderdeelNaam) {
-        Query query = entityManager.createQuery("select o from Onderdeel o where o.onderdeel_id = :naam ");
-        query.setParameter("naam", onderdeelNaam);
+
+    public Onderdeel getOnderdeelByName(String naam) {
+        Query query = entityManager.createQuery("select o from Onderdeel o where o.naam = :naam ");
+        query.setParameter("naam", naam);
         Onderdeel result = (Onderdeel) query.getSingleResult();
 
         return result;
     }
 
-
-    // DELETE
-    public void deleteOnderdeel(String onderdeelId) {
-        startTransaction();
-        Onderdeel subject = entityManager.find(Onderdeel.class, Onderdeel.getOnderdeel());
-        entityManager.remove(subject);
+    public int deleteOnderdeelByName(String naam){
+        int rowsDeleted;
+        entityManager.getTransaction().begin();
+        Query query = entityManager.createQuery("DELETE from Onderdeel o WHERE o.onderdeel_id = :onderdeel");
+        query.setParameter("naam", naam);
+        rowsDeleted = query.executeUpdate();
+        System.out.println("Records deleted: " + rowsDeleted);
         entityManager.getTransaction().commit();
-    }
+        return rowsDeleted;
 
+    }
 
 }

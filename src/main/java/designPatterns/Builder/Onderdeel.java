@@ -1,4 +1,4 @@
-package designPatterns.builder;
+package designPatterns.Builder;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -13,7 +13,7 @@ public class Onderdeel {
     private int onderdeel_id;
 
     @Column
-    private static String onderdeel;
+    private String naam;
 
     @Column
     private String onderdeel_prijs;
@@ -22,11 +22,11 @@ public class Onderdeel {
 // Getters and setters
     public int getId() {return onderdeel_id;}
     public void setId(int id) {this.onderdeel_id = id;}
-    public static String getOnderdeel() {
-        return onderdeel;
-    }
-    public void setOnderdeel(String onderdeel) {
-        this.onderdeel = onderdeel;
+
+    public String getNaam() {return naam;}
+
+    public void setNaam(String naam) {
+        this.naam = naam;
     }
 
     public String getOnderdeel_prijs() {
@@ -42,7 +42,7 @@ public class Onderdeel {
     public String toString() {
         return "Onderdeel{" +
                 "ID=" + onderdeel_id +
-                ", OnderdeelTitel='" + onderdeel + '\'' +
+                ", OnderdeelTitel='" + naam + '\'' +
                 ", Prijs=" + onderdeel_prijs + '\'' +
                 '}';
     }
