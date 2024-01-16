@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b892356-001c-4740-9fad-e94b087b5629" name="Changes" comment="scanner Yuh">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7f85e955-a424-4464-84ba-2be40c963a86.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7f85e955-a424-4464-84ba-2be40c963a86.xml" afterDir="false" />
+    <list default="true" id="1b892356-001c-4740-9fad-e94b087b5629" name="Changes" comment="7.26">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/designPatterns/builder/NewOnderdeelBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/Builder/OnderdeelRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/designPatterns/builder/Onderdeel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/Builder/Onderdeel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/designPatterns/builder/OnderdeelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/designPatterns/Builder/OnderdeelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/StudentService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/skasa/IdeaProjects/MyORM-registratiesysteem",
+    "last_opened_file_path": "C:/Workspace/MyOrm-hibernate-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,6 +104,7 @@
       <workItem from="1704920795680" duration="21322000" />
       <workItem from="1705162308122" duration="6186000" />
       <workItem from="1705235406103" duration="18226000" />
+      <workItem from="1705271149142" duration="4626000" />
     </task>
     <task id="LOCAL-00001" summary="docentRepositoty updated">
       <created>1700910451754</created>
@@ -161,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705160700247</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="7.26">
+      <created>1705271175246</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271175246</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +186,7 @@
     <MESSAGE value="updates" />
     <MESSAGE value="BUILDER" />
     <MESSAGE value="scanner Yuh" />
-    <option name="LAST_COMMIT_MESSAGE" value="scanner Yuh" />
+    <MESSAGE value="7.26" />
+    <option name="LAST_COMMIT_MESSAGE" value="7.26" />
   </component>
 </project>
